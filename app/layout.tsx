@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'A Digital Product Platform.',
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }:any) {
   return (
     <>
       <html lang='en' suppressHydrationWarning>
