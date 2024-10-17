@@ -4,11 +4,12 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from '../utilities/ModeToggle';
 import { ShoppingCart } from 'lucide-react';
+
 const Navbar = () => {
   const user = false;
   return (
     <nav>
-      <div className='navbar fixed bg-base-100 dark:bg-[#262940] shadow dark:shadow-none px-6'>
+      <div className='navbar fixed z-50 bg-base-100 dark:bg-[#262940] shadow dark:shadow-none px-6'>
         <div className='navbar-start'>
           <div className='dropdown'>
             <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -42,8 +43,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='navbar-center hidden lg:flex'>
-          <ul className='menu menu-horizontal px-1 space-x-5 text-[16px]  font-semibold font-[inter]'>
-            <Link href='/' className='hover:text-[#6B38F1] '>
+          <ul className='menu menu-horizontal px-1 space-x-5 text-[16px] font-semibold font-[inter]'>
+            <Link href='/' className='hover:text-[#6B38F1]'>
               Home
             </Link>
             <Link href='/' className='hover:text-[#6B38F1]'>
@@ -66,13 +67,12 @@ const Navbar = () => {
             <ShoppingCart />
           </div>
           {/* Dark Mode Toggler */}
-
           <ModeToggle />
           {user ? (
             <Button>Dashboard</Button>
           ) : (
             <div className='flex space-x-3'>
-              <Button>Registraton</Button>
+              <Button>Registration</Button>
               <Button>Login</Button>
             </div>
           )}

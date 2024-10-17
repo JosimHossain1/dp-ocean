@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className='px-6 flex justify-between items-center bg-[url("https://wowtheme7.com/tf/dpmarket/assets/images/gradients/banner-gradient.png")] dark:bg-none dark:bg-[#1A1D37] bg-no-repeat bg-cover h-screen'>
+    <div className='px-6 flex justify-between items-center bg-[url("https://wowtheme7.com/tf/dpmarket/assets/images/gradients/banner-gradient.png")] dark:bg-none dark:bg-[#1A1D37] bg-no-repeat bg-cover h-full py-40'>
       {/* Left side */}
       <div className='w-1/2'>
         <h1 className='text-[80px] font-[inter] font-bold leading-tight'>

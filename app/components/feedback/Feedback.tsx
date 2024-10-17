@@ -1,14 +1,13 @@
 import React from 'react';
 import FeedbackCard from './FeedbackCard';
 import Marquee from 'react-fast-marquee';
+import { Heading1 } from '@/app/utilities/Heading';
 
 const Feedback = () => {
   return (
     <div className='overflow-hidden whitespace-nowrap w-full dark:bg-gray-900 py-10'>
       <div className='text-center mb-10'>
-        <h1 className='text-[30px] font-[inter] font-bold leading-tight'>
-          Customers Feedback
-        </h1>
+        <Heading1> Customers Feedback</Heading1>
         <p className='text-md font-[inter] text-gray-600 dark:text-white'>
           Empowering creators with innovative digital asset solutions, <br />
           trusted by our global community.
